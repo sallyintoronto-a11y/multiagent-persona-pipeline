@@ -21,7 +21,7 @@ def _agent_axes(a: Dict[str, Any]) -> Tuple[float, float, float]:
 
 def summarize_pair(pair_result: Dict[str, Any]) -> Dict[str, Any]:
     """
-    pair_result 예:
+    pair_result example:
     {
       "pair": "GENDER",
       "evaluation": { "agents": {...}, "delta": {...} },
