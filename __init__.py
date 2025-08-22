@@ -19,8 +19,8 @@ from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage
 
 # Model selection
-VISION_MODEL = os.getenv("VISION_MODEL", "gpt-4o")       # Multimodal (image+text)
-SCORER_MODEL = os.getenv("SCORER_MODEL", "gpt-4o-mini")  # Text scoring, fast/cheap
+VISION_MODEL = os.getenv("VISION_MODEL", "gpt-4o-2024-08-06")       # Multimodal (image+text)
+SCORER_MODEL = os.getenv("SCORER_MODEL", "gpt-4o-mini-2024-07-18")  # Text scoring, fast/cheap
 
 # LangChain LLM instances
 vision_llm = ChatOpenAI(model=VISION_MODEL, temperature=0)
