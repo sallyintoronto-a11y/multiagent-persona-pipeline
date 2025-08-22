@@ -1,10 +1,58 @@
 # multiagent-persona-pipeline
 A multimodal pipeline using LangGraph, simulating cultural personas and evaluating bias with multi-agent workflows.
 
-This repository provides a multimodal pipeline built with LangGraph and OpenAI GPT models, designed to simulate cultural personas and evaluate bias through multi-agent workflows. It focuses on generating image-grounded interpretations in Korean and analyzing how different demographic personas may interpret the same scene.
+1. Project Overview
 
-The pipeline organizes agents into demographic pairs (e.g., gender, education, nationality, race, residency duration). Each persona produces a description and reflection of an image, which are then compared and scored across three axes: factuality, norm appropriateness, and bias presence.
+This repository provides a multimodal pipeline built with LangGraph and OpenAI GPT models.
+It is designed to simulate cultural personas and evaluate bias through multi-agent workflows.
+In particular, it generates image-grounded interpretations in Korean and analyzes how the same scene may be interpreted differently depending on demographic factors.
 
-Results are saved as structured JSON reports, including per-image, per-pair, and batch outputs. Summarization scripts are also included to aggregate results into compact summaries for easier analysis. Both system-prompt and user-prompt versions are available, allowing flexibility in how instructions are delivered to the models.
+2. Key Features
 
-This project can be run in Google Colab or locally, and is intended as a tool for exploring cultural bias, persona-based interpretation, and multimodal evaluation.
+Multi-agent Persona Simulation
+
+Constructs demographic pairs (e.g., gender, education, nationality, race, residency duration).
+
+Each persona produces an image description and reflection.
+
+Evaluation Axes
+
+Persona outputs are compared along three axes:
+
+Factuality
+
+Norm Appropriateness
+
+Bias Presence
+
+Flexible Output Formats
+
+Results are saved as JSON reports.
+
+Supports outputs per image, per pair, and batch-level.
+
+Summarization and Aggregation Scripts
+
+Generates aggregated and summarized results from reports.
+
+Provides compact summaries for easier analysis.
+
+Prompting Variants
+
+Supports both system-prompt and user-prompt versions of the workflow.
+
+Enables analysis of differences based on instruction delivery.
+
+3. Execution Environment
+
+Can be run in Google Colab or locally.
+
+Designed to handle multimodal inputs (image + text).
+
+4. Use Cases
+
+Exploration of cultural bias
+
+Comparison of persona-based interpretations
+
+Experiments in multimodal evaluation
