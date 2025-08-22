@@ -10,9 +10,7 @@ except Exception:
 
 client = OpenAI()  # Reads automatically from env
 
-# ============================================================
 # Imports & Model Setup
-# ============================================================
 from __future__ import annotations
 
 import json
