@@ -91,11 +91,10 @@ if __name__ == "__main__":
     if DO_BATCH:
         image_dir = "/content/drive/MyDrive/Weekly_seminar(July.2025~)/CulturalVLM/images"  # <--- change this
         images = collect_images_from_dir(image_dir)
-        selected_pairs = ["GENDER", "RACE", "RESIDENCY_DURATION"]
-        run_batch(images, selected_pairs=selected_pairs, out_dir="./outputs")
+        run_batch(images, out_dir="./outputs")
     else:
         image_path = "/content/drive/MyDrive/Weekly_seminar(July.2025~)/CulturalVLM/images/some_image.jpg"  # <--- change this
-        wf = create_workflow(selected_pairs=["GENDER", "RACE", "RESIDENCY_DURATION"])
+        wf = create_workflow()
         init = {"image_path": image_path, "history": [], "pair_results": []}
         result_state = wf.invoke(init)
         final = result_state.get("final_report", {})
