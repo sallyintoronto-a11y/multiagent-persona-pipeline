@@ -1,5 +1,5 @@
 # ============================================================
-# Personas & Eval Schema
+# Personas
 # ============================================================
 PERSONAS: Dict[str, Any] = {
     "schema_note": "All personas share the SAME bias_style to isolate a single demographic factor per pair.",
