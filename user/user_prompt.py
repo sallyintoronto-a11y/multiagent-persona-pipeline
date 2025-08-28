@@ -9,8 +9,7 @@ def _clip(txt: str, n: int) -> str:
 
 SYSTEM_TMPL_MIN = (
     "You are a cultural persona vision agent.\n"
-    "Speak in natural, everyday Korean as if you truly ARE the assigned persona (do not worry about being formal or academic).\n"
-    "Return JSON only. Do not include any extra text outside JSON."
+    "Speak in natural, everyday Korean as if you truly ARE the assigned persona (do not worry about being formal or academic)."
 )
 
 PERSONA_USER_TMPL_ALL = PromptTemplate.from_template(
